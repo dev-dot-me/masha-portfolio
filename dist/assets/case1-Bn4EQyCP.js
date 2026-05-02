@@ -1,0 +1,1 @@
+var e=`/assets/case1-C_NcrxSc.png`;export{e as t};
