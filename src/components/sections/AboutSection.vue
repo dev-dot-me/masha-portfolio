@@ -1,10 +1,14 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import portrait from '../../assets/author-photo.png'
 
-const paragraphs = [
-  '¡Hola! Soy María especialista en SMM y creadora de contenido con 3 años de experiencia en la creación de contenido y 1,5 años en la gestión integral de redes sociales. Ayudo a los negocios a atraer clientes, aumentar el reconocimiento de marca y mejorar las ventas a través de una estrategia de SMM efectiva.',
-  'Me encargo del proyecto de forma completa: desde la estrategia y el desarrollo de branding hasta la producción de contenido, diseño, lanzamiento de publicidad y análisis mensual. Utilizo herramientas de IA para crear contenido visual único que hace destacar a la marca frente a la competencia.',
-]
+const { t, tm } = useI18n()
+
+const paragraphs = computed(() => {
+  const raw = tm('about.paragraphs')
+  return Array.isArray(raw) ? raw : []
+})
 
 function scrollToContacts() {
   document.querySelector('#contacts')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -17,7 +21,6 @@ function scrollToContacts() {
       class="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-14 xl:gap-16"
     >
       <div class="relative shrink-0 max-lg:mx-auto lg:justify-self-start">
-        <!-- w-fit: рамка точно по краю фото, без «полів» зліва/справа всередині rounded-блоку -->
         <div
           class="inline-block w-fit max-w-[min(320px,92vw)] overflow-hidden rounded-[1.75rem] bg-white ring-1 ring-black/[0.06]"
         >
@@ -33,8 +36,8 @@ function scrollToContacts() {
 
       <div class="space-y-8">
         <div class="space-y-4">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">Про мене</p>
-          <h2 class="font-heading text-3xl text-brand md:text-4xl">Марія · SMM Lead</h2>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">{{ t('about.kicker') }}</p>
+          <h2 class="font-heading text-3xl text-brand md:text-4xl">{{ t('about.title') }}</h2>
         </div>
 
         <div class="space-y-5 text-base leading-relaxed text-brand/75 md:text-lg">
@@ -48,7 +51,7 @@ function scrollToContacts() {
           class="rounded-full bg-surface px-6 py-3 text-sm font-semibold text-brand ring-1 ring-black/[0.08] transition hover:bg-brand hover:text-white"
           @click="scrollToContacts"
         >
-          Дізнатись більше
+          {{ t('about.cta') }}
         </button>
       </div>
     </div>

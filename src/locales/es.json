@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "how": "Cómo trabajo",
+    "cases": "Casos",
+    "reviews": "Reseñas",
+    "blog": "Blog",
+    "contacts": "Contacto"
+  },
+  "header": {
+    "casesCta": "Más sobre los casos",
+    "navTitle": "Navegación",
+    "menu": "Menú",
+    "closeMenu": "Cerrar menú",
+    "langGroup": "Idioma del sitio"
+  },
+  "common": {
+    "backHome": "Inicio",
+    "backBlog": "Al blog",
+    "learnMore": "Saber más",
+    "readMore": "Leer completo",
+    "viewsHint": "Vistas"
+  },
+  "hero": {
+    "badge": "SMM integral",
+    "titleBefore": "Convierto redes sociales en",
+    "titleAccent": "herramienta de ventas",
+    "lead": "Soy María, especialista en SMM. Hago cuentas que venden, se reconocen y captan atención desde el primer segundo: estrategia, contenido, diseño, ads y visual con IA — todo integrado.",
+    "features": [
+      "Estrategia y posicionamiento de marca",
+      "Contenido, diseño y un visual reconocible",
+      "Publicidad segmentada y embudos",
+      "Visual con IA y analítica mensual"
+    ],
+    "cta": "Hablemos del proyecto",
+    "ctaHint": "Primer paso: brief corto y entender tu nicho. Luego adaptamos la estrategia a tus metas y recursos.",
+    "photoAlt": "María — especialista en SMM",
+    "cardTitle": "Mini diagnóstico inicial",
+    "cardBody": "Para nuevos partners: revisión rápida del perfil y tres palancas de crecimiento sin compromiso."
+  },
+  "stats": {
+    "lines": [
+      "Colaboración con 4 países",
+      "8 nichos: belleza, inmobiliaria, grandes empresas, etc.",
+      "LTV con cliente ~2 años",
+      "Gestión de 20+ páginas"
+    ]
+  },
+  "projectSpotlight": {
+    "imageAlt": "Caso: fabricante de adoquines",
+    "kicker": "Proyecto destacado",
+    "title": "Fabricante de adoquines para patios",
+    "subtitle": "Estrategia B2B + B2C · 2+ años · Ads + SMM",
+    "pills": [
+      "30 000€ beneficio mensual",
+      "×20 ROAS en ads",
+      "1 500€ presupuesto ads",
+      "6 meses a resultado estable"
+    ],
+    "taskTitle": "Reto",
+    "taskBody": "Cliente fabricante de adoquines, nicho competitivo y poca presencia social. Había que montar un SMM sistemático para B2C (particulares) y B2B (constructoras y diseñadores)."
+  },
+  "about": {
+    "kicker": "Sobre mí",
+    "title": "María · SMM Lead",
+    "paragraphs": [
+      "¡Hola! Soy María, especialista en SMM y creadora de contenido con 3 años creando contenido y 1,5 años gestionando redes de punta a punta. Ayudo a negocios a atraer clientes, reforzar marca y vender mejor con una estrategia de SMM sólida.",
+      "Lidero el proyecto completo: desde estrategia y branding hasta producción de contenido, diseño, lanzamiento de ads y analítica mensual. Uso IA para un visual único que destaca frente a la competencia."
+    ],
+    "cta": "Saber más"
+  },
+  "casesPreview": {
+    "kicker": "Portafolio",
+    "title": "Mis trabajos",
+    "case1Title": "Fabricante de adoquines para patios",
+    "case1Meta": "Ucrania · 2+ años",
+    "case2Title": "Viajes a África",
+    "case2Meta": "EAU · Turismo",
+    "case3Title": "Clínica dental",
+    "case3Meta": "Ucrania · Salud"
+  },
+  "process": {
+    "sectionKicker": "Proceso transparente",
+    "title": "Cómo trabajo",
+    "intro": "Seis bloques de calma para tu equipo: del primer brief a escalar resultados sin caos en la comunicación.",
+    "steps": [
+      {
+        "tag": "Inicio",
+        "title": "Brief estratégico y hoja de ruta",
+        "body": "Partimos de una inmersión en producto, audiencia y competencia. Recibes un plan claro por meses con KPI y prioridades."
+      },
+      {
+        "tag": "Proceso",
+        "title": "Todo el material en un solo sistema",
+        "body": "Planes de contenido, tableros de aprobación y archivos en un espacio de trabajo (Notion/Drive según tu acceso)."
+      },
+      {
+        "tag": "Ritmo",
+        "title": "Calendario de publicaciones e informes",
+        "body": "Al inicio alineamos ritmo de posts, iteraciones de ads y reporting para que el equipo sepa qué esperar."
+      },
+      {
+        "tag": "Fiabilidad",
+        "title": "Canales de contacto de respaldo",
+        "body": "Actualizaciones donde te sea cómodo: chat laboral, email y exportación a PDF para acceso offline."
+      },
+      {
+        "tag": "Estándares",
+        "title": "Plantillas y guías por etapa",
+        "body": "Aporto plantillas de posts, resúmenes de reuniones y checklists para refrescar contexto sin revisar decenas de archivos."
+      },
+      {
+        "tag": "Escala",
+        "title": "Red de partners de confianza",
+        "body": "Si hace falta, sumo targeting, producción o storytelling con gente probada — misma exigencia de calidad."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Reseñas",
+    "accent": "Trabajo con negocios de distintas categorías — de expertos a marcas. Aquí encontrarás reseñas honestas sobre proceso, comunicación y resultados.",
+    "learnMore": "Saber más"
+  },
+  "blog": {
+    "readTime": "{n} min de lectura",
+    "sectionKicker": "Ideas y materiales",
+    "title": "Blog",
+    "intro": "Artículos de SMM, investigación del feed y guías prácticas: elige un tema y lee la versión completa en su página.",
+    "readMore": "Leer completo",
+    "viewsHint": "Vistas",
+    "back": "Volver al blog",
+    "notFoundTitle": "Artículo no encontrado",
+    "notFoundBody": "Comprueba el enlace o vuelve al blog en la home.",
+    "notFoundHome": "Volver al inicio",
+    "tags": {
+      "smm": "#SMM",
+      "research": "#INVESTIGACIÓN",
+      "interesting": "#CURIOSIDADES",
+      "ai": "#IA"
+    },
+    "posts": {
+      "10-idey-kontent-dnya-materi": {
+        "title": "10 ideas de contenido en redes para el Día de la Madre: qué publicar",
+        "body": [
+          "El Día de la Madre es un gancho emocional fuerte: la audiencia ya quiere compartir historias y fotos. El reto de la marca es acompañar ese estado de ánimo sin “vender desde el escenario”.",
+          "Funcionan guías de regalos, checklists si mamá está en otra ciudad, historias del equipo, UGC con hashtag y colaboraciones locales.",
+          "Define una llave visual y un mensaje principal con antelación: el feed se verá cohesivo y no como posts sueltos."
+        ]
+      },
+      "doslidzhennya-instagram-45-brendiv": {
+        "title": "¿Por qué baja el engagement al crecer la comunidad, cuánto publicar y cómo mejorar la interacción? Estudio de 45 marcas ucranianas en Instagram",
+        "body": [
+          "Analizamos cuentas públicas de 45 marcas de distintos sectores durante 90 días: alcance, ER, frecuencia y formato (Reels, carruseles, Stories).",
+          "Conclusión: el engagement rara vez “cae solo”; suele caer por contenido repetitivo, subir la frecuencia sin testear formatos o ignorar comentarios en la primera hora.",
+          "Las marcas que responden en comentarios y mantienen un CTA fuerte por semana sostienen mejor el ER incluso con 50k+ seguidores."
+        ]
+      },
+      "kontent-plan-smm-traven-2026": {
+        "title": "Plan de contenidos SMM para mayo de 2026: hooks e ideas de posts y vídeo",
+        "body": [
+          "Mayo combina festividades, puentes y el arranque de temporada para muchas categorías: calendario de hooks, ideas de columnas y plantilla para el equipo.",
+          "Equilibra carruseles educativos (guardados), Reels (alcance) y Stories (confianza y encuestas). Mejor 3–4 piezas de calidad por semana que saturar cada día.",
+          "Añade una columna “fuente de la idea” (competidor, petición del cliente, tendencia) y revisa el plan cada dos semanas con analítica."
+        ]
+      },
+      "dark-net-mify-ta-realnist": {
+        "title": "Qué debería saber un marketer sobre la “dark web”: mitos, riesgos y realidad",
+        "body": [
+          "“Dark net” se usa mucho en clickbait. En SMM conviene distinguir plataformas legales con moderación estricta de zonas sin responsabilidad sobre datos.",
+          "El riesgo para la marca suele ser reputacional: partners opacos, bases grises de leads o bots de comentarios. Revisa políticas de datos y licencias.",
+          "En resumen: canales transparentes, consentimientos documentados y evita “bases calientes” compradas."
+        ]
+      },
+      "50-promptiv-chatgpt-smm": {
+        "title": "50 prompts de ChatGPT para SMM: de ideas de post a guiones de Reels",
+        "body": [
+          "La IA no sustituye la estrategia, pero acelera borradores, titulares y cambios de tono de formal a cercano.",
+          "Incluye prompts con placeholders para nicho, público y límites de marca; añade un ejemplo de post previo para que el modelo capte la voz.",
+          "Verifica datos: no publiques estadísticas inventadas sin fuente. Usa la IA para hipótesis y valida con humanos."
+        ]
+      },
+      "podkast-smm-osobystyj-brend": {
+        "title": "Podcast sobre SMM: cómo construir marca personal de experta — con Anastasiia Yalanska",
+        "body": [
+          "Hablamos de cómo no dispersar el foco entre plataformas: qué queda en Instagram y qué va a LinkedIn o YouTube.",
+          "Checklist del primer mes tras un rebranding de perfil personal: desde la bio hasta Stories con “pruebas de competencia”.",
+          "Si combinas blog y servicio, prueba la regla 70/30: 70% utilidad y casos, 30% contexto personal para no cansar con venta continua."
+        ]
+      }
+    }
+  },
+  "reviews": {
+    "items": [
+      {
+        "name": "Olia Oleksyn",
+        "text": "Todo muy estructurado y claro, con mucha información. Es mi segundo curso con el equipo y me encanta el enfoque y la cantidad de material. A veces pensaba «esto está súper denso» — y eso, para mí, es señal de calidad."
+      },
+      {
+        "name": "Svitlana Lototska",
+        "text": "Lo repetiré mil veces: la gente y la comunidad es lo más valioso. Reunieron a personas increíbles y el acompañamiento fue excelente. Gracias porque nadie se quedó sin respuesta y nos unieron con una idea común."
+      },
+      {
+        "name": "Sofiia Fuchylo",
+        "text": "El curso fue un aire fresco. Trabajo en SMM y ya había hecho otro programa — es clave para ordenar ideas. A mitad de camino noté que el mentoring suma aún más. Disfruté mucho las clases; da pena que termine: los productos enganchan. Gracias al equipo."
+      },
+      {
+        "name": "Natalia Koval",
+        "text": "Subimos alcance en historias y mantuvimos leads desde ads sin «quemar» presupuesto. Los informes son claros y las revisiones rápidas: por fin el SMM se siente como un sistema, no como caos en el chat."
+      },
+      {
+        "name": "Víctor Rudenko",
+        "text": "Sector inmobiliario: el contenido se ve más sobrio y premium, y los leads de Instagram entran al CRM sin copiar a mano. Recomiendo si buscas un enfoque adulto de estrategia."
+      },
+      {
+        "name": "Anna Melnyk",
+        "text": "En temporada alta, María llevó creatividades, tests y optimización. En dos meses vimos qué ofertas funcionan y escalamos solo esas."
+      },
+      {
+        "name": "Dmytro Panchenko",
+        "text": "La página B2B parecía «como todas». Tras rediseñar el feed y las pistas en historias, más clientes escriben al DM con consultas concretas."
+      },
+      {
+        "name": "Kateryna Lytvyn",
+        "text": "En salud hay que cuidar el tono. Valoré poder validar cada bloque: correcto legalmente y humano para pacientes."
+      },
+      {
+        "name": "Marko Tkachenko",
+        "text": "Hicimos vídeos cortos orientados al producto, sin postureo. Las ventas orgánicas subieron por claridad de beneficios, no por hype."
+      },
+      {
+        "name": "Yuliia Savchenko",
+        "text": "En eventos importa el ritmo. Cumplimos anuncios, early bird y contenido live sin parecer un incendio el último día."
+      },
+      {
+        "name": "Ihor Hnatiuk",
+        "text": "Plan de contenidos, ads y analítica al mismo ritmo. Por fin miramos solicitudes y coste por contacto, no solo likes."
+      },
+      {
+        "name": "Lesia Shevchenko",
+        "text": "Trabajaron el visual con delicadeza: no rehicieron la marca desde cero, sino que reforzaron lo reconocible. Los clientes notan un feed más coherente."
+      }
+    ],
+    "formWarn": "Completa todos los campos, por favor.",
+    "formOk": "¡Gracias! Hemos recibido tu mensaje y te responderemos al revisarlo.",
+    "pageTitle": "Reseñas",
+    "pageLead": "Resultados reales de mi trabajo con negocios. Clientas y clientes comparten su experiencia y los resultados que logramos juntos.",
+    "accent": "Trabajo con negocios de distintas categorías — de expertos a marcas. Aquí hay reseñas honestas sobre proceso, comunicación y resultados.",
+    "loadMore": "Mostrar más",
+    "formTitle": "Dejar una reseña",
+    "labelName": "Nombre",
+    "phName": "Tu nombre",
+    "labelContact": "@Instagram o contacto",
+    "phContact": "@usuario o email / teléfono",
+    "labelText": "Texto de la reseña",
+    "phText": "Cuéntanos la colaboración y el resultado",
+    "submit": "Enviar"
+  },
+  "casesPage": {
+    "pavers": {
+      "backHome": "Volver al inicio",
+      "imageAlt": "Caso: fabricante de adoquines",
+      "heroBadge": "Caso #1 · Producción",
+      "title": "Fabricante de adoquines para patios",
+      "subtitle": "Estrategia B2B + B2C · 2+ años colaborando · Ads segmentados + SMM",
+      "metricLabels": [
+        "Beneficio mensual",
+        "ROAS en ads",
+        "Presupuesto de ads",
+        "Hasta resultado estable"
+      ],
+      "metricValues": [
+        "30 000€",
+        "×20",
+        "1 500€",
+        "6 meses"
+      ],
+      "taskTitle": "Reto",
+      "taskBody": "Cliente: fabricante de adoquines para patios, en un nicho competitivo sin fuerte presencia social. Había que construir un SMM sistemático para dos segmentos: clientes privados (B2C) y empresas de construcción y diseñadores (B2B).",
+      "doneTitle": "Qué hicimos",
+      "donePill": "Enfoque en sistema",
+      "deliverables": [
+        {
+          "title": "Estrategia de contenido dual",
+          "body": "Mensajes separados para B2C (belleza del patio, inspiración, antes/después) y B2B (fiabilidad, volúmenes, condiciones) con voz de marca alineada."
+        },
+        {
+          "title": "Publicidad segmentada en alta competencia",
+          "body": "Campañas separadas por segmento: targeting fino, test de creatividades y limpieza continua de combinaciones débiles."
+        },
+        {
+          "title": "Trabajo conjunto con el cliente",
+          "body": "Aprobaciones con producción y ventas: respuesta rápida a estacionalidad, promos y demanda del mercado sin romper la comunicación."
+        },
+        {
+          "title": "Analítica y escalado",
+          "body": "Revisión mensual de resultados, optimización de presupuesto y escalado solo de lo que confirman los datos."
+        }
+      ],
+      "ctaKicker": "Siguiente",
+      "ctaTitle": "¿Hablamos de un caso parecido para tu nicho?",
+      "ctaBody": "Déjame un contacto en el pie o en redes: vuelvo con primeras hipótesis y formatos de colaboración.",
+      "ctaButton": "Volver al landing"
+    }
+  },
+  "footer": {
+    "title": "Empecemos con una conversación",
+    "lead": "Cuéntame tu negocio y tus metas: definimos el formato de colaboración y los siguientes pasos sin burocracia extra.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "phone": "Teléfono",
+    "email": "Email",
+    "rights": "Todos los derechos reservados."
+  }
+}

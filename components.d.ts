@@ -12,12 +12,17 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AboutSection: typeof import('./src/components/sections/AboutSection.vue')['default']
+    BlogCard: typeof import('./src/components/blog/BlogCard.vue')['default']
     BlogSection: typeof import('./src/components/sections/BlogSection.vue')['default']
     CasesPreviewSection: typeof import('./src/components/sections/CasesPreviewSection.vue')['default']
     ElDrawer: typeof import('element-plus/es')['ElDrawer']
+    ElDropdown: typeof import('element-plus/es')['ElDropdown']
+    ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
+    ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
     HeroSection: typeof import('./src/components/sections/HeroSection.vue')['default']
     ProcessSection: typeof import('./src/components/sections/ProcessSection.vue')['default']
     ProjectSpotlight: typeof import('./src/components/sections/ProjectSpotlight.vue')['default']
+    ReviewCard: typeof import('./src/components/reviews/ReviewCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SiteFooter: typeof import('./src/components/SiteFooter.vue')['default']

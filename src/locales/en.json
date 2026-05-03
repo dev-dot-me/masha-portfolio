@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "about": "About",
+    "how": "How I work",
+    "cases": "Cases",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "contacts": "Contact"
+  },
+  "header": {
+    "casesCta": "More on cases",
+    "navTitle": "Navigation",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "langGroup": "Site language"
+  },
+  "common": {
+    "backHome": "Home",
+    "backBlog": "To blog",
+    "learnMore": "Learn more",
+    "readMore": "Read full article",
+    "viewsHint": "Views"
+  },
+  "hero": {
+    "badge": "Full-stack SMM",
+    "titleBefore": "I turn social media into a",
+    "titleAccent": "sales engine",
+    "lead": "I’m María, an SMM specialist. I make accounts sell, stay recognisable, and grab attention in the first second — strategy, content, design, ads, and AI visuals, end to end.",
+    "features": [
+      "Strategy and brand positioning",
+      "Content, design, and a recognisable look",
+      "Targeted ads and funnel support",
+      "AI visuals and monthly analytics"
+    ],
+    "cta": "Discuss the project",
+    "ctaHint": "First step: a short brief and understanding your niche. Then we shape the strategy to your goals and resources.",
+    "photoAlt": "María — SMM specialist",
+    "cardTitle": "First mini audit",
+    "cardBody": "For new partners: a quick profile audit and three growth levers — no strings attached."
+  },
+  "stats": {
+    "lines": [
+      "Collaboration across 4 countries",
+      "8 niches: beauty, real estate, large enterprises, and more",
+      "~2 years client LTV",
+      "Managing 20+ pages"
+    ]
+  },
+  "projectSpotlight": {
+    "imageAlt": "Case: paving manufacturer",
+    "kicker": "Featured project",
+    "title": "Paving manufacturer for courtyards",
+    "subtitle": "B2B + B2C strategy · 2+ years · Targeted ads + SMM",
+    "pills": [
+      "€30k monthly profit",
+      "×20 ROAS on ads",
+      "€1.5k ad budget",
+      "6 mo. to stable results"
+    ],
+    "taskTitle": "Challenge",
+    "taskBody": "Client — paving manufacturer — competitive niche, weak social presence. We needed systematic SMM for homeowners (B2C) and construction firms and designers (B2B)."
+  },
+  "about": {
+    "kicker": "About me",
+    "title": "María · SMM Lead",
+    "paragraphs": [
+      "Hi! I'm María, an SMM specialist and content creator with 3 years in content production and 1.5 years running full social media management. I help businesses attract clients, grow brand recognition, and lift sales with an effective SMM strategy.",
+      "I own the project end to end: strategy and branding development through content production, design, ad launches, and monthly analytics. I use AI tools to craft distinctive visuals that stand out from competitors."
+    ],
+    "cta": "Learn more"
+  },
+  "casesPreview": {
+    "kicker": "Portfolio",
+    "title": "Selected work",
+    "case1Title": "Paving manufacturer for courtyards",
+    "case1Meta": "Ukraine · 2+ years",
+    "case2Title": "Africa tours",
+    "case2Meta": "UAE · Travel",
+    "case3Title": "Dental clinic",
+    "case3Meta": "Ukraine · Healthcare"
+  },
+  "process": {
+    "sectionKicker": "Transparent process",
+    "title": "How I work",
+    "intro": "Six doses of calm for your team: from the first brief to scaling results without communication chaos.",
+    "steps": [
+      {
+        "tag": "Kick-off",
+        "title": "Strategic brief and roadmap",
+        "body": "We start with a deep dive into your product, audience, and competitors. You get a clear multi-month plan with KPIs and priorities."
+      },
+      {
+        "tag": "Process",
+        "title": "All materials in one system",
+        "body": "Content plans, approval boards, and files live in one workspace (Notion/Drive under your access rules)."
+      },
+      {
+        "tag": "Rhythm",
+        "title": "Publishing and reporting calendar",
+        "body": "Early on we align post cadence, ad iterations, and reporting so expectations are clear upfront."
+      },
+      {
+        "tag": "Reliability",
+        "title": "Backup communication channels",
+        "body": "Keep key updates where you are comfortable: work chat, email, and PDF exports for offline access."
+      },
+      {
+        "tag": "Standards",
+        "title": "Templates and stage prompts",
+        "body": "I add post templates, short meeting summaries, and checklists so you can refresh context without digging through dozens of files."
+      },
+      {
+        "tag": "Scale",
+        "title": "A vetted partner network",
+        "body": "When needed I bring in targeting, production, or storytelling from a trusted circle — same quality bar."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Reviews",
+    "accent": "I work with businesses across niches — from experts to brands. Here are honest notes on process, communication, and results.",
+    "learnMore": "Learn more"
+  },
+  "blog": {
+    "readTime": "{n} min read",
+    "sectionKicker": "Ideas and materials",
+    "title": "Blog",
+    "intro": "SMM articles, feed research, and practical guides — pick a topic and read the full version on its own page.",
+    "readMore": "Read full article",
+    "viewsHint": "Views",
+    "back": "Back to blog",
+    "notFoundTitle": "Article not found",
+    "notFoundBody": "Check the link or return to the blog from the homepage.",
+    "notFoundHome": "Back to home",
+    "tags": {
+      "smm": "#SMM",
+      "research": "#RESEARCH",
+      "interesting": "#CURIOSITIES",
+      "ai": "#AI"
+    },
+    "posts": {
+      "10-idey-kontent-dnya-materi": {
+        "title": "10 social content ideas for Mother's Day: what to publish",
+        "body": [
+          "Mother's Day is a strong emotional hook: people already want to share stories and photos. The brand's job is to support that mood rather than selling from the stage.",
+          "Gift guides, checklists for long-distance families, team stories, UGC with a campaign hashtag, and local collabs work well.",
+          "Lock a visual key and one main message early so the feed feels cohesive, not like random one-offs."
+        ]
+      },
+      "doslidzhennya-instagram-45-brendiv": {
+        "title": "Why engagement drops as followers grow, how often to post, and how to improve it — research on 45 Ukrainian brands on Instagram",
+        "body": [
+          "We analysed public accounts of 45 brands across niches for 90 days: reach, ER, cadence, and format (Reels, carousels, Stories).",
+          "Key insight: engagement rarely “falls by itself”; it often drops due to repetitive content, sudden frequency spikes without format tests, or ignoring comments in the first hour.",
+          "Brands that reply in comments and keep one strong weekly CTA held ER above average even at 50k+ followers."
+        ]
+      },
+      "kontent-plan-smm-traven-2026": {
+        "title": "SMM content plan for May 2026: hooks and ideas for posts and video",
+        "body": [
+          "May mixes holidays, long weekends, and season kick-off for many niches — the article includes a hook calendar, monthly column ideas, and a team sheet template.",
+          "Balance educational carousels (saves), Reels (reach), and Stories (trust and polls). Prefer 3–4 quality posts per week plus consistent Stories.",
+          "Add an “idea source” column (competitor, client ask, trend) and refresh the plan every two weeks using analytics."
+        ]
+      },
+      "dark-net-mify-ta-realnist": {
+        "title": "What marketers should know about the “dark web”: myths, brand risks, and reality",
+        "body": [
+          "“Dark net” is often clickbait. In SMM, separate legitimate moderated platforms from zones with no accountability for user data.",
+          "Brand risk is usually reputational: opaque partners, grey lead lists, or auto-comment bots. Always check data policies and tool licences.",
+          "In short: focus on transparent channels, document consent, and avoid buying “hot databases”."
+        ]
+      },
+      "50-promptiv-chatgpt-smm": {
+        "title": "50 ChatGPT prompts for SMM: from post ideas to Reels scripts",
+        "body": [
+          "AI is not a strategy replacement but speeds up drafts, headline variants, and tone shifts from formal to friendly.",
+          "The article lists prompts with placeholders for niche, audience, and brand constraints — add a sample of your past post so the model catches your voice.",
+          "Fact-check: do not publish statistics generated without sources. Use AI for hypotheses and validate with humans."
+        ]
+      },
+      "podkast-smm-osobystyj-brend": {
+        "title": "SMM podcast: building an expert’s personal brand — conversation with Anastasiia Yalanska",
+        "body": [
+          "We discuss how not to scatter focus across platforms: what stays on Instagram vs LinkedIn or YouTube.",
+          "A checklist for the first month after a personal profile rebrand — from bio to Stories that prove expertise.",
+          "If you run both a blog and a service, try a 70/30 rule: 70% value and cases, 30% personal context so the feed never feels like endless selling."
+        ]
+      }
+    }
+  },
+  "reviews": {
+    "items": [
+      {
+        "name": "Olia Oleksyn",
+        "text": "Everything is structured, clear, and packed with information. This is my second course with the team and I love the approach and volume of material. Sometimes I thought “this is intense” — for me that’s a quality signal."
+      },
+      {
+        "name": "Svitlana Lototska",
+        "text": "I’ll repeat it endlessly: people and community are what I value most. You brought great people together and ran excellent community management. Thanks for making sure nobody was left unanswered."
+      },
+      {
+        "name": "Sofiia Fuchylo",
+        "text": "The course felt like a breath of fresh air. I work in SMM and had already taken another programme — it’s a must for structure. Midway I realised mentoring adds even more. Loved the lessons; your products are addictive. Thanks to the team."
+      },
+      {
+        "name": "Natalia Koval",
+        "text": "We lifted story reach and kept steady leads from ads without burning budget. Reports are clear, revisions fast — SMM finally feels like a system, not chat chaos."
+      },
+      {
+        "name": "Viktor Rudenko",
+        "text": "Real estate niche: content looks calmer and more premium, Instagram leads flow into the CRM without manual copy-paste. Recommend if you want a grown-up strategy approach."
+      },
+      {
+        "name": "Anna Melnyk",
+        "text": "Peak-season ads — María kept a tight pulse on creatives, tests, and optimisation. In two months we knew which offers actually worked and scaled those."
+      },
+      {
+        "name": "Dmytro Panchenko",
+        "text": "Our B2B page looked “like everyone else’s”. After redesigning the feed and story prompts, clients DM with concrete questions more often."
+      },
+      {
+        "name": "Kateryna Lytvyn",
+        "text": "Healthcare is sensitive to wording. I appreciated being able to calmly align every block: legally correct and human for patients."
+      },
+      {
+        "name": "Marko Tkachenko",
+        "text": "We made short product-led videos without fluff. Organic sales grew from clear benefits, not hype."
+      },
+      {
+        "name": "Yuliia Savchenko",
+        "text": "For events, publishing tempo matters. We hit announcements, early-bird deadlines, and live content without last-day panic."
+      },
+      {
+        "name": "Ihor Hnatiuk",
+        "text": "Content plan, ads, and analytics in one rhythm. Finally we look at inquiries and cost per lead, not just likes."
+      },
+      {
+        "name": "Lesia Shevchenko",
+        "text": "Very delicate visual work: they didn’t rebuild the brand from scratch but strengthened what was already recognisable. Clients say the feed feels more cohesive."
+      }
+    ],
+    "formWarn": "Please fill in all fields.",
+    "formOk": "Thanks! Message received — we’ll get back to you after we review it.",
+    "pageTitle": "Reviews",
+    "pageLead": "Real outcomes from my work with businesses. Clients share their collaboration experience and the results we achieved together.",
+    "accent": "I work with businesses across niches — from experts to brands. Here are honest reviews on process, communication, and results.",
+    "loadMore": "Show more",
+    "formTitle": "Leave a review",
+    "labelName": "Name",
+    "phName": "Your name",
+    "labelContact": "@Instagram or contact",
+    "phContact": "@handle or email / phone",
+    "labelText": "Review text",
+    "phText": "Tell us about the collaboration and outcome",
+    "submit": "Send"
+  },
+  "casesPage": {
+    "pavers": {
+      "backHome": "Back to home",
+      "imageAlt": "Case study: paving manufacturer",
+      "heroBadge": "Case #1 · Manufacturing",
+      "title": "Paving manufacturer for courtyards",
+      "subtitle": "B2B + B2C strategy · 2+ years working together · Targeted ads + SMM",
+      "metricLabels": [
+        "Monthly profit",
+        "ROAS on ads",
+        "Ad budget",
+        "Time to stable results"
+      ],
+      "metricValues": [
+        "€30,000",
+        "×20",
+        "€1,500",
+        "6 mo."
+      ],
+      "taskTitle": "Challenge",
+      "taskBody": "Client — paving manufacturer for courtyards — in a highly competitive niche with weak social presence. We needed systematic SMM covering both private homeowners (B2C) and construction firms and designers (B2B).",
+      "doneTitle": "What we delivered",
+      "donePill": "Systems-first focus",
+      "deliverables": [
+        {
+          "title": "Dual content strategy",
+          "body": "Separate messaging for B2C (courtyard beauty, inspiration, before/after) and B2B (reliability, volumes, partnership terms) with a synced brand voice."
+        },
+        {
+          "title": "Targeted ads under high competition",
+          "body": "Separate campaigns per segment: precise targeting, creative testing, and continuous pruning of weak combinations."
+        },
+        {
+          "title": "Teamwork on the client side",
+          "body": "Joint approvals with production and sales — fast reactions to seasonality, promos, and market demand without breaking the thread."
+        },
+        {
+          "title": "Analytics and scaling",
+          "body": "Monthly performance reviews, budget optimisation, and scaling only combinations validated by data."
+        }
+      ],
+      "ctaKicker": "Next",
+      "ctaTitle": "Ready to discuss a similar case for your niche?",
+      "ctaBody": "Leave a contact in the footer or reach out on social — I’ll come back with first hypotheses and collaboration formats.",
+      "ctaButton": "Return to landing"
+    }
+  },
+  "footer": {
+    "title": "Let's start with a conversation",
+    "lead": "Tell me about your business and goals — we’ll pick a collaboration format and next steps without extra bureaucracy.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "phone": "Phone",
+    "email": "Email",
+    "rights": "All rights reserved."
+  }
+}

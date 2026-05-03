@@ -1,38 +1,23 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import heroImg from '../assets/case1.png'
 
-const metrics = [
-  { label: 'Прибуток щомісяця', value: '30 000€' },
-  { label: 'ROAS на рекламу', value: '×20' },
-  { label: 'Бюджет на рекламу', value: '1 500€' },
-  { label: 'До стабільного результату', value: '6 міс.' },
-]
+const { tm } = useI18n()
 
-const task =
-  'Клієнт — виробник бруківки для подвірʼя — працював у висококонкурентній ніші без сильної присутності в соцмережах. Потрібно було вибудувати системний SMM що охоплює одночасно два сегменти: приватних замовників (B2C) та будівельні компанії і дизайнерів (B2B).'
+const pavers = computed(() => tm('casesPage.pavers') || {})
 
-const deliverables = [
-  {
-    title: 'Подвійна контент-стратегія',
-    body:
-      'Окремі меседжі для B2C (краса подвірʼя, натхнення, до/після) та B2B (надійність, обсяги, умови співпраці) з синхронізацією голосу бренду.',
-  },
-  {
-    title: 'Таргетована реклама у високій конкуренції',
-    body:
-      'Запуск окремих рекламних кампаній для кожного сегменту: точний таргетинг, тест креативів і постійне прибирання неефективних звʼязок.',
-  },
-  {
-    title: 'Командна робота з боку клієнта',
-    body:
-      'Спільні узгодження з виробництвом і відділом продажів — швидка реакція на сезонність, промо та запити ринку без розриву комунікації.',
-  },
-  {
-    title: 'Системна аналітика та масштабування',
-    body:
-      'Щомісячний розбір результатів, оптимізація бюджету й масштабування тільки тих звʼязок, що підтверджені даними.',
-  },
-]
+const metrics = computed(() => {
+  const labels = pavers.value.metricLabels
+  const values = pavers.value.metricValues
+  if (!Array.isArray(labels) || !Array.isArray(values)) return []
+  return labels.map((label, i) => ({ label, value: values[i] ?? '' }))
+})
+
+const deliverables = computed(() => {
+  const d = pavers.value.deliverables
+  return Array.isArray(d) ? d : []
+})
 </script>
 
 <template>
@@ -43,7 +28,7 @@ const deliverables = [
         class="inline-flex items-center gap-2 text-sm font-semibold text-brand/55 transition hover:text-brand"
       >
         <span aria-hidden="true">←</span>
-        На головну
+        {{ pavers.backHome }}
       </RouterLink>
 
       <section class="mt-10 grid gap-10 lg:grid-cols-[auto_minmax(0,1fr)] lg:items-center lg:gap-12">
@@ -52,7 +37,7 @@ const deliverables = [
         >
           <img
             :src="heroImg"
-            alt="Кейс виробника бруківки"
+            :alt="pavers.imageAlt"
             class="mx-auto block h-auto max-h-[400px] w-auto max-w-full object-contain object-center align-middle"
             loading="lazy"
           />
@@ -60,14 +45,14 @@ const deliverables = [
 
         <div class="space-y-6">
           <div class="inline-flex items-center gap-2 rounded-full bg-surface px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand/55 ring-1 ring-black/[0.05]">
-            Кейс №1 · Виробництво
+            {{ pavers.heroBadge }}
           </div>
           <div class="space-y-3">
             <h1 class="font-heading text-4xl leading-tight text-brand md:text-5xl">
-              Виробник бруківки для подвірʼя
+              {{ pavers.title }}
             </h1>
             <p class="text-base font-medium leading-relaxed text-brand/70 md:text-lg">
-              B2B + B2C стратегія · 2+ роки співпраці · Таргетована реклама + SMM
+              {{ pavers.subtitle }}
             </p>
           </div>
 
@@ -82,22 +67,22 @@ const deliverables = [
 
       <section class="mt-16 grid gap-10 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,1fr)] lg:gap-14">
         <div class="rounded-[1.75rem] bg-surface p-8 ring-1 ring-black/[0.05]">
-          <p class="text-xs font-bold uppercase tracking-[0.22em] text-brand/45">Задача</p>
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-brand/45">{{ pavers.taskTitle }}</p>
           <p class="mt-5 text-base leading-relaxed text-brand/75">
-            {{ task }}
+            {{ pavers.taskBody }}
           </p>
         </div>
 
         <div class="space-y-6 rounded-[1.75rem] border border-black/[0.06] bg-white p-8 shadow-[0_22px_70px_-48px_rgba(14,32,52,0.55)]">
           <div class="flex items-center justify-between gap-4">
-            <h2 class="font-heading text-2xl text-brand md:text-3xl">Що було зроблено</h2>
+            <h2 class="font-heading text-2xl text-brand md:text-3xl">{{ pavers.doneTitle }}</h2>
             <span class="hidden rounded-full bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-brand/55 md:inline-flex">
-              Фокус на системність
+              {{ pavers.donePill }}
             </span>
           </div>
 
           <ol class="space-y-6">
-            <li v-for="(item, idx) in deliverables" :key="item.title" class="flex gap-4">
+            <li v-for="(item, idx) in deliverables" :key="idx" class="flex gap-4">
               <span class="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-brand text-sm font-bold text-white">
                 {{ idx + 1 }}
               </span>
@@ -113,17 +98,17 @@ const deliverables = [
       <section class="mt-16 rounded-[1.75rem] bg-brand px-6 py-10 text-white lg:px-10 lg:py-12">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div class="space-y-3">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">Далі</p>
-            <p class="font-heading text-2xl md:text-3xl">Готові обговорити подібний кейс для вашої ніші?</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">{{ pavers.ctaKicker }}</p>
+            <p class="font-heading text-2xl md:text-3xl">{{ pavers.ctaTitle }}</p>
             <p class="max-w-xl text-sm leading-relaxed text-white/75">
-              Залиште контакт у футері або напряму в соцмережах — повернусь із першими гіпотезами та форматами співпраці.
+              {{ pavers.ctaBody }}
             </p>
           </div>
           <RouterLink
             to="/"
             class="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-xl shadow-black/25 transition hover:bg-white/90"
           >
-            Повернутись на лендінг
+            {{ pavers.ctaButton }}
           </RouterLink>
         </div>
       </section>

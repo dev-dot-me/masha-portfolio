@@ -1,3 +1,5 @@
+import { copyFileSync, existsSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
@@ -23,6 +25,19 @@ export default defineConfig(({ command }) => ({
       dts: true,
       resolvers: [ElementPlusResolver()],
     }),
+    // GitHub Pages: прямий захід /…/cases дає 404 з сервера — дублюємо index у 404.html (офіційний SPA-трюк)
+    {
+      name: 'github-pages-spa-404',
+      apply: 'build',
+      closeBundle() {
+        const out = resolve(process.cwd(), 'docs')
+        const indexHtml = resolve(out, 'index.html')
+        const notFoundHtml = resolve(out, '404.html')
+        if (existsSync(indexHtml)) {
+          copyFileSync(indexHtml, notFoundHtml)
+        }
+      },
+    },
   ],
   build: {
     outDir: 'docs',
