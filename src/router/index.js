@@ -1,15 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-/** GitHub Pages + relative Vite base: історія має префікс /REPO/, асети — відносні ./… */
+/** Перший сегмент URL для цих маршрутів — не назва репо (корінь сайту), а сам маршрут. */
+const ROOT_TOP_SEGMENTS = new Set(['reviews', 'projects', 'cases', 'blog', 'about'])
+
+/**
+ * GitHub Pages: сайт у підпапці /REPO/ → history base /REPO/.
+ * Локально / vite preview на корені: /reviews, /projects — base має бути '/', інакше router-view порожній.
+ */
 function resolveHistoryBase() {
   const base = import.meta.env.BASE_URL
   if (!base.startsWith('.')) {
     return base.endsWith('/') ? base : `${base}/`
   }
-  const raw = typeof window !== 'undefined' ? window.location.pathname : '/'
-  const seg = raw.replace(/\/$/, '').split('/').filter(Boolean)
-  const repoRoot = seg.length ? `/${seg[0]}/` : '/'
-  return repoRoot
+  if (typeof window === 'undefined') return '/'
+  const seg = window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean)
+  if (seg.length === 0) return '/'
+  if (seg.length >= 2) {
+    if (ROOT_TOP_SEGMENTS.has(seg[0])) return '/'
+    return `/${seg[0]}/`
+  }
+  if (ROOT_TOP_SEGMENTS.has(seg[0])) return '/'
+  return `/${seg[0]}/`
 }
 
 const router = createRouter({
@@ -33,13 +44,22 @@ const router = createRouter({
     },
     {
       path: '/cases',
-      name: 'cases',
-      component: () => import('../views/CasesView.vue'),
+      redirect: '/projects',
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: () => import('../views/ProjectsView.vue'),
     },
     {
       path: '/reviews',
       name: 'reviews',
       component: () => import('../views/ReviewsView.vue'),
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutMeView.vue'),
     },
     {
       path: '/blog/:slug',

@@ -25,7 +25,7 @@ export default defineConfig(({ command }) => ({
       dts: true,
       resolvers: [ElementPlusResolver()],
     }),
-    // GitHub Pages: прямий захід /…/cases дає 404 з сервера — дублюємо index у 404.html (офіційний SPA-трюк)
+    // GitHub Pages: прямий захід /…/projects дає 404 з сервера — дублюємо index у 404.html (офіційний SPA-трюк)
     {
       name: 'github-pages-spa-404',
       apply: 'build',

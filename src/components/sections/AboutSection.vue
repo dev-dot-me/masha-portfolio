@@ -9,10 +9,6 @@ const paragraphs = computed(() => {
   const raw = tm('about.paragraphs')
   return Array.isArray(raw) ? raw : []
 })
-
-function scrollToContacts() {
-  document.querySelector('#contacts')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
 </script>
 
 <template>
@@ -46,13 +42,12 @@ function scrollToContacts() {
           </p>
         </div>
 
-        <button
-          type="button"
-          class="rounded-full bg-surface px-6 py-3 text-sm font-semibold text-brand ring-1 ring-black/[0.08] transition hover:bg-brand hover:text-white"
-          @click="scrollToContacts"
+        <RouterLink
+          :to="{ name: 'about' }"
+          class="inline-flex rounded-full bg-surface px-6 py-3 text-sm font-semibold text-brand ring-1 ring-black/[0.08] transition hover:bg-brand hover:text-white"
         >
           {{ t('about.cta') }}
-        </button>
+        </RouterLink>
       </div>
     </div>
   </section>

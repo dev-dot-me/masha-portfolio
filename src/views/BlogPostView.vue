@@ -3,11 +3,13 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalizedBlogPost } from '../composables/useLocalizedBlogPosts.js'
+import { normalizeBlogBody } from '../utils/blogBodyBlocks.js'
 
 const route = useRoute()
 const { t } = useI18n()
 const slug = computed(() => String(route.params.slug ?? ''))
 const post = useLocalizedBlogPost(slug)
+const bodyBlocks = computed(() => normalizeBlogBody(post.value?.body))
 
 const tagClass = computed(() => {
   const p = post.value
@@ -49,19 +51,43 @@ const tagClass = computed(() => {
           <span>{{ post.dateLabel }}</span>
           <span class="text-brand/25" aria-hidden="true">|</span>
           <span>{{ post.readTime }}</span>
+          <!-- Article views (hidden)
           <span class="text-brand/25" aria-hidden="true">|</span>
           <span class="inline-flex items-center gap-1">
             <span aria-hidden="true">👁</span>
             {{ post.viewsFormatted }}
           </span>
+          -->
         </p>
 
         <div class="mt-10 overflow-hidden rounded-2xl bg-surface ring-1 ring-black/[0.06]">
           <img :src="post.cover" :alt="post.title" class="aspect-[16/9] w-full object-cover md:aspect-[2/1]" loading="eager" />
         </div>
 
-        <div class="prose-blog mt-10 space-y-5 text-base leading-relaxed text-brand/80 md:text-[1.05rem]">
-          <p v-for="(paragraph, i) in post.body" :key="i">{{ paragraph }}</p>
+        <div
+          class="article-body mt-10 max-w-none text-base leading-relaxed text-brand/80 md:text-[1.05rem]"
+        >
+          <template v-for="(block, i) in bodyBlocks" :key="i">
+            <h2
+              v-if="block.kind === 'h2'"
+              class="font-heading text-[1.35rem] font-bold leading-snug text-brand md:text-2xl [&:not(:first-child)]:mt-12 mb-3 first:mt-0"
+            >
+              {{ block.text }}
+            </h2>
+            <h3
+              v-else-if="block.kind === 'h3'"
+              class="font-heading text-lg font-semibold leading-snug text-brand md:text-xl mt-7 mb-2"
+            >
+              {{ block.text }}
+            </h3>
+            <blockquote
+              v-else-if="block.kind === 'quote'"
+              class="my-6 rounded-r-xl border-l-4 border-orange-500/40 bg-brand/[0.04] py-4 pl-5 pr-4 text-[0.98em] not-italic leading-relaxed text-brand/85 md:pl-6"
+            >
+              {{ block.text }}
+            </blockquote>
+            <p v-else class="mb-4 last:mb-0 leading-relaxed">{{ block.text }}</p>
+          </template>
         </div>
       </article>
     </div>

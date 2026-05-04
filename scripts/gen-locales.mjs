@@ -12,18 +12,6 @@ mkdirSync(outDir, { recursive: true })
 
 const reviewsUa = [
   {
-    name: 'Оля Олексин',
-    text: 'Усе структуровано, чітко, багато інформації. Загалом це мій другий курс від Тані і мені дуже подобається ваш підхід, кількість матеріалу та його подача. Насправді стільки інформації, що інколи були думки «Боже, як насичено! Чому це не розділили на два потоки?» — це найкращий показник якості.',
-  },
-  {
-    name: 'Світлана Лотоцька',
-    text: 'Повторюватиму мільйон разів: люди й комʼюніті — найдорожче, що я отримала і найважливіше. Ви зібрали чудових людей і провели крутий people management. Дякую за те, що ніхто не лишився без відповіді, не засумував і за те, що обʼєднали нас спільною ідеєю.',
-  },
-  {
-    name: 'Софія Фучило',
-    text: 'Цей курс — як ковток свіжого повітря. Я працюю в SMM і перед цим уже була на програмі Тані — це маст-хев для системності. На середині зрозуміла, що наставництво відгукується навіть більше. Дуже кайфувала від уроків і сумно, що все закінчилося — ваші продукти затягують :) Дякую всім кураторам та Тані за топовий продукт!',
-  },
-  {
     name: 'Наталія Коваль',
     text: 'Ми підняли охоплення сторіс і стабільно тримали заявки з таргету без «заливання бюджету». Звіти зрозумілі, правки швидкі — нарешті SMM відчувається як система, а не хаос у чаті.',
   },
@@ -32,28 +20,8 @@ const reviewsUa = [
     text: 'Працюємо в ніші нерухомості: контент став спокійнішим і дорожчим на вигляд, ліди з Instagram пішли в CRM без ручного переносу. Рекомендую, якщо потрібен дорослий підхід до стратегії.',
   },
   {
-    name: 'Анна Мельник',
-    text: 'Запускали рекламу в сезон піку — Марія тримала руку на пульсі: креативи, тести, оптимізація. За два місяці ми зрозуміли, які офери реально «їдуть», і масштабували саме їх.',
-  },
-  {
-    name: 'Дмитро Панченко',
-    text: 'B2B-сторінка виглядала «як у всіх». Після редизайну стрічки та підказок у сторіс клієнти стали частіше писати в DM з конкретними запитами — менше «просто цікаво».',
-  },
-  {
-    name: 'Катерина Литвин',
-    text: 'Медична ніша — чутливо до формулювань. Дуже ціную, що можна було спокійно узгоджувати кожен блок: і юридично коректно, і людяно для пацієнтів.',
-  },
-  {
-    name: 'Марко Ткаченко',
-    text: 'Зробили серію коротких відео під продукт — без «вайбу ради вайбу». Продажі з органіки виросли не завдяки хайпу, а завдяки ясній подачі переваг.',
-  },
-  {
     name: 'Юлія Савченко',
     text: 'Для івентів важливий темп публікацій. Ми встигали анонси, дедлайни раннього білету й live-контент — і це не виглядало як паніка в останній день.',
-  },
-  {
-    name: 'Ігор Гнатюк',
-    text: 'Контент-план + реклама + аналітика в одному ритмі. Нарешті бачимо не «лайки», а заявки та вартість звернення — це те, за що платимо маркетингу.',
   },
   {
     name: 'Леся Шевченко',
@@ -63,18 +31,6 @@ const reviewsUa = [
 
 const reviewsEs = [
   {
-    name: 'Olia Oleksyn',
-    text: 'Todo muy estructurado y claro, con mucha información. Es mi segundo curso con el equipo y me encanta el enfoque y la cantidad de material. A veces pensaba «esto está súper denso» — y eso, para mí, es señal de calidad.',
-  },
-  {
-    name: 'Svitlana Lototska',
-    text: 'Lo repetiré mil veces: la gente y la comunidad es lo más valioso. Reunieron a personas increíbles y el acompañamiento fue excelente. Gracias porque nadie se quedó sin respuesta y nos unieron con una idea común.',
-  },
-  {
-    name: 'Sofiia Fuchylo',
-    text: 'El curso fue un aire fresco. Trabajo en SMM y ya había hecho otro programa — es clave para ordenar ideas. A mitad de camino noté que el mentoring suma aún más. Disfruté mucho las clases; da pena que termine: los productos enganchan. Gracias al equipo.',
-  },
-  {
     name: 'Natalia Koval',
     text: 'Subimos alcance en historias y mantuvimos leads desde ads sin «quemar» presupuesto. Los informes son claros y las revisiones rápidas: por fin el SMM se siente como un sistema, no como caos en el chat.',
   },
@@ -83,28 +39,8 @@ const reviewsEs = [
     text: 'Sector inmobiliario: el contenido se ve más sobrio y premium, y los leads de Instagram entran al CRM sin copiar a mano. Recomiendo si buscas un enfoque adulto de estrategia.',
   },
   {
-    name: 'Anna Melnyk',
-    text: 'En temporada alta, María llevó creatividades, tests y optimización. En dos meses vimos qué ofertas funcionan y escalamos solo esas.',
-  },
-  {
-    name: 'Dmytro Panchenko',
-    text: 'La página B2B parecía «como todas». Tras rediseñar el feed y las pistas en historias, más clientes escriben al DM con consultas concretas.',
-  },
-  {
-    name: 'Kateryna Lytvyn',
-    text: 'En salud hay que cuidar el tono. Valoré poder validar cada bloque: correcto legalmente y humano para pacientes.',
-  },
-  {
-    name: 'Marko Tkachenko',
-    text: 'Hicimos vídeos cortos orientados al producto, sin postureo. Las ventas orgánicas subieron por claridad de beneficios, no por hype.',
-  },
-  {
     name: 'Yuliia Savchenko',
     text: 'En eventos importa el ritmo. Cumplimos anuncios, early bird y contenido live sin parecer un incendio el último día.',
-  },
-  {
-    name: 'Ihor Hnatiuk',
-    text: 'Plan de contenidos, ads y analítica al mismo ritmo. Por fin miramos solicitudes y coste por contacto, no solo likes.',
   },
   {
     name: 'Lesia Shevchenko',
@@ -114,18 +50,6 @@ const reviewsEs = [
 
 const reviewsEn = [
   {
-    name: 'Olia Oleksyn',
-    text: 'Everything is structured, clear, and packed with information. This is my second course with the team and I love the approach and volume of material. Sometimes I thought “this is intense” — for me that’s a quality signal.',
-  },
-  {
-    name: 'Svitlana Lototska',
-    text: 'I’ll repeat it endlessly: people and community are what I value most. You brought great people together and ran excellent community management. Thanks for making sure nobody was left unanswered.',
-  },
-  {
-    name: 'Sofiia Fuchylo',
-    text: 'The course felt like a breath of fresh air. I work in SMM and had already taken another programme — it’s a must for structure. Midway I realised mentoring adds even more. Loved the lessons; your products are addictive. Thanks to the team.',
-  },
-  {
     name: 'Natalia Koval',
     text: 'We lifted story reach and kept steady leads from ads without burning budget. Reports are clear, revisions fast — SMM finally feels like a system, not chat chaos.',
   },
@@ -134,28 +58,8 @@ const reviewsEn = [
     text: 'Real estate niche: content looks calmer and more premium, Instagram leads flow into the CRM without manual copy-paste. Recommend if you want a grown-up strategy approach.',
   },
   {
-    name: 'Anna Melnyk',
-    text: 'Peak-season ads — María kept a tight pulse on creatives, tests, and optimisation. In two months we knew which offers actually worked and scaled those.',
-  },
-  {
-    name: 'Dmytro Panchenko',
-    text: 'Our B2B page looked “like everyone else’s”. After redesigning the feed and story prompts, clients DM with concrete questions more often.',
-  },
-  {
-    name: 'Kateryna Lytvyn',
-    text: 'Healthcare is sensitive to wording. I appreciated being able to calmly align every block: legally correct and human for patients.',
-  },
-  {
-    name: 'Marko Tkachenko',
-    text: 'We made short product-led videos without fluff. Organic sales grew from clear benefits, not hype.',
-  },
-  {
     name: 'Yuliia Savchenko',
     text: 'For events, publishing tempo matters. We hit announcements, early-bird deadlines, and live content without last-day panic.',
-  },
-  {
-    name: 'Ihor Hnatiuk',
-    text: 'Content plan, ads, and analytics in one rhythm. Finally we look at inquiries and cost per lead, not just likes.',
   },
   {
     name: 'Lesia Shevchenko',
@@ -168,33 +72,6 @@ function blogBlockUa(slug, title, body) {
 }
 
 const blogUa = {
-  '10-idey-kontent-dnya-materi': blogBlockUa(
-    '10-idey-kontent-dnya-materi',
-    '10 ідей для контенту в соцмережах до Дня матері: що публікувати',
-    [
-      'День матері — сильний емоційний інфопривід: аудиторія вже в настрої ділитися історіями, фото та подяками. Завдання бренду — не «продати зі сцени», а підтримати цей настрій і м’яко показати свої цінності.',
-      'Підійдуть добірки подарунків і сервісів, чекліст «як привітати маму, якщо ви в різних містах», історії команди про їхніх мам, UGC з хештегом кампанії, колаборації з локальними майстрами та квітковими студіями.',
-      'Важливо заздалегідь затвердити візуальний ключ (кольори, шрифти) і один основний меседж — так стрічка виглядатиме цілісно, а не як набір разових постів. Залиште місце для легкого гумору та чесних історій — вони збирають більше збережень, ніж сухі промо.',
-    ],
-  ),
-  'doslidzhennya-instagram-45-brendiv': blogBlockUa(
-    'doslidzhennya-instagram-45-brendiv',
-    'Чому з ростом підписників падає взаємодія, скільки треба постити і як збільшити залученість аудиторії? Дослідження 45 українських брендів в Instagram',
-    [
-      'Ми проаналізували публічні акаунти 45 брендів з різних ніш: від локальних кавʼярень до e-commerce. Метрики знімали за останні 90 днів — охоплення, ER, частота публікацій і формат (Reels, каруселі, Stories).',
-      'Головний висновок: залученість рідко «падає сама по собі» — частіше вона знижується через однотипний контент, різкий стрибок частоти без тесту форматів або ігнор коментарів у перші години після публікації.',
-      'Бренди, які стабільно відповідають у коментарях і закріплюють один сильний CTA на тиждень, тримали ER вище середнього навіть при аудиторії 50k+. Окремо виділимо роль Reels як джерела нових підписників — але без «людського» закріплення вони погано конвертують у лояльність.',
-    ],
-  ),
-  'kontent-plan-smm-traven-2026': blogBlockUa(
-    'kontent-plan-smm-traven-2026',
-    'Контент-план для SMM на травень 2026: інфоприводи та ідеї дописів і відео',
-    [
-      'Травень поєднує свята, довгі вікенди й старт літнього сезону для багатьох ніш. У матеріалі — календар інфоприводів, приклади рубрик на місяць і шаблон таблиці для команди.',
-      'Зверніть увагу на баланс: освітні каруселі дають збереження, Reels — охоплення, Stories — довіру та опитування. Не намагайтеся закрити все кожного дня: краще 3–4 якості-публікації на тиждень плюс системні Stories.',
-      'Додайте колонку «джерело ідеї» (конкурент, клієнтський запит, тренд TikTok) — так простіше не застрягати в середині місяця. Оновлюйте план раз на два тижні за результатами аналітики.',
-    ],
-  ),
   'dark-net-mify-ta-realnist': blogBlockUa(
     'dark-net-mify-ta-realnist',
     'Що маркетологу варто знати про «темний інтернет»: міфи, ризики для брендів і реальність',
@@ -225,31 +102,6 @@ const blogUa = {
 }
 
 const blogEs = {
-  '10-idey-kontent-dnya-materi': {
-    title: '10 ideas de contenido en redes para el Día de la Madre: qué publicar',
-    body: [
-      'El Día de la Madre es un gancho emocional fuerte: la audiencia ya quiere compartir historias y fotos. El reto de la marca es acompañar ese estado de ánimo sin “vender desde el escenario”.',
-      'Funcionan guías de regalos, checklists si mamá está en otra ciudad, historias del equipo, UGC con hashtag y colaboraciones locales.',
-      'Define una llave visual y un mensaje principal con antelación: el feed se verá cohesivo y no como posts sueltos.',
-    ],
-  },
-  'doslidzhennya-instagram-45-brendiv': {
-    title:
-      '¿Por qué baja el engagement al crecer la comunidad, cuánto publicar y cómo mejorar la interacción? Estudio de 45 marcas ucranianas en Instagram',
-    body: [
-      'Analizamos cuentas públicas de 45 marcas de distintos sectores durante 90 días: alcance, ER, frecuencia y formato (Reels, carruseles, Stories).',
-      'Conclusión: el engagement rara vez “cae solo”; suele caer por contenido repetitivo, subir la frecuencia sin testear formatos o ignorar comentarios en la primera hora.',
-      'Las marcas que responden en comentarios y mantienen un CTA fuerte por semana sostienen mejor el ER incluso con 50k+ seguidores.',
-    ],
-  },
-  'kontent-plan-smm-traven-2026': {
-    title: 'Plan de contenidos SMM para mayo de 2026: hooks e ideas de posts y vídeo',
-    body: [
-      'Mayo combina festividades, puentes y el arranque de temporada para muchas categorías: calendario de hooks, ideas de columnas y plantilla para el equipo.',
-      'Equilibra carruseles educativos (guardados), Reels (alcance) y Stories (confianza y encuestas). Mejor 3–4 piezas de calidad por semana que saturar cada día.',
-      'Añade una columna “fuente de la idea” (competidor, petición del cliente, tendencia) y revisa el plan cada dos semanas con analítica.',
-    ],
-  },
   'dark-net-mify-ta-realnist': {
     title: 'Qué debería saber un marketer sobre la “dark web”: mitos, riesgos y realidad',
     body: [
@@ -277,31 +129,6 @@ const blogEs = {
 }
 
 const blogEn = {
-  '10-idey-kontent-dnya-materi': {
-    title: "10 social content ideas for Mother's Day: what to publish",
-    body: [
-      "Mother's Day is a strong emotional hook: people already want to share stories and photos. The brand's job is to support that mood rather than selling from the stage.",
-      'Gift guides, checklists for long-distance families, team stories, UGC with a campaign hashtag, and local collabs work well.',
-      'Lock a visual key and one main message early so the feed feels cohesive, not like random one-offs.',
-    ],
-  },
-  'doslidzhennya-instagram-45-brendiv': {
-    title:
-      'Why engagement drops as followers grow, how often to post, and how to improve it — research on 45 Ukrainian brands on Instagram',
-    body: [
-      'We analysed public accounts of 45 brands across niches for 90 days: reach, ER, cadence, and format (Reels, carousels, Stories).',
-      'Key insight: engagement rarely “falls by itself”; it often drops due to repetitive content, sudden frequency spikes without format tests, or ignoring comments in the first hour.',
-      'Brands that reply in comments and keep one strong weekly CTA held ER above average even at 50k+ followers.',
-    ],
-  },
-  'kontent-plan-smm-traven-2026': {
-    title: 'SMM content plan for May 2026: hooks and ideas for posts and video',
-    body: [
-      'May mixes holidays, long weekends, and season kick-off for many niches — the article includes a hook calendar, monthly column ideas, and a team sheet template.',
-      'Balance educational carousels (saves), Reels (reach), and Stories (trust and polls). Prefer 3–4 quality posts per week plus consistent Stories.',
-      'Add an “idea source” column (competitor, client ask, trend) and refresh the plan every two weeks using analytics.',
-    ],
-  },
   'dark-net-mify-ta-realnist': {
     title: 'What marketers should know about the “dark web”: myths, brand risks, and reality',
     body: [
@@ -516,116 +343,47 @@ const sharedProcessEn = {
   ],
 }
 
-const casesPaversUa = {
+const projectsPageUa = {
+  docTitle: 'Проєкти · Марія SMM',
   backHome: 'На головну',
-  imageAlt: 'Кейс виробника бруківки',
-  heroBadge: 'Кейс №1 · Виробництво',
-  title: 'Виробник бруківки для подвірʼя',
-  subtitle: 'B2B + B2C стратегія · 2+ роки співпраці · Таргетована реклама + SMM',
-  metricLabels: ['Прибуток щомісяця', 'ROAS на рекламу', 'Бюджет на рекламу', 'До стабільного результату'],
-  metricValues: ['30 000€', '×20', '1 500€', '6 міс.'],
-  taskTitle: 'Задача',
-  taskBody:
-    'Клієнт — виробник бруківки для подвірʼя — працював у висококонкурентній ніші без сильної присутності в соцмережах. Потрібно було вибудувати системний SMM що охоплює одночасно два сегменти: приватних замовників (B2C) та будівельні компанії і дизайнерів (B2B).',
-  doneTitle: 'Що було зроблено',
-  donePill: 'Фокус на системність',
-  deliverables: [
-    {
-      title: 'Подвійна контент-стратегія',
-      body: 'Окремі меседжі для B2C (краса подвірʼя, натхнення, до/після) та B2B (надійність, обсяги, умови співпраці) з синхронізацією голосу бренду.',
-    },
-    {
-      title: 'Таргетована реклама у високій конкуренції',
-      body: 'Запуск окремих рекламних кампаній для кожного сегменту: точний таргетинг, тест креативів і постійне прибирання неефективних звʼязок.',
-    },
-    {
-      title: 'Командна робота з боку клієнта',
-      body: 'Спільні узгодження з виробництвом і відділом продажів — швидка реакція на сезонність, промо та запити ринку без розриву комунікації.',
-    },
-    {
-      title: 'Системна аналітика та масштабування',
-      body: 'Щомісячний розбір результатів, оптимізація бюджету й масштабування тільки тих звʼязок, що підтверджені даними.',
-    },
-  ],
-  ctaKicker: 'Далі',
-  ctaTitle: 'Готові обговорити подібний кейс для вашої ніші?',
-  ctaBody:
-    'Залиште контакт у футері або напряму в соцмережах — повернусь із першими гіпотезами та форматами співпраці.',
-  ctaButton: 'Повернутись на лендінг',
+  pageTitle: 'Проєкти',
+  pageLead:
+    'Пʼять проєктів із вимірюваними результатами: контекст, дії та ключові метрики в кожному блоці.',
+  context: 'Контекст',
+  whatIDid: 'Що зробила',
+  result: 'Результат',
+  ctaKicker: 'Наступний крок',
+  ctaTitle: 'Обговорити подібний проєкт для вашого бізнесу?',
+  ctaBody: 'Зв’яжіться з нами',
+  ctaButton: 'До контактів',
 }
 
-const casesPaversEs = {
+const projectsPageEs = {
+  docTitle: 'Proyectos · María SMM',
   backHome: 'Volver al inicio',
-  imageAlt: 'Caso: fabricante de adoquines',
-  heroBadge: 'Caso #1 · Producción',
-  title: 'Fabricante de adoquines para patios',
-  subtitle: 'Estrategia B2B + B2C · 2+ años colaborando · Ads segmentados + SMM',
-  metricLabels: ['Beneficio mensual', 'ROAS en ads', 'Presupuesto de ads', 'Hasta resultado estable'],
-  metricValues: ['30 000€', '×20', '1 500€', '6 meses'],
-  taskTitle: 'Reto',
-  taskBody:
-    'Cliente: fabricante de adoquines para patios, en un nicho competitivo sin fuerte presencia social. Había que construir un SMM sistemático para dos segmentos: clientes privados (B2C) y empresas de construcción y diseñadores (B2B).',
-  doneTitle: 'Qué hicimos',
-  donePill: 'Enfoque en sistema',
-  deliverables: [
-    {
-      title: 'Estrategia de contenido dual',
-      body: 'Mensajes separados para B2C (belleza del patio, inspiración, antes/después) y B2B (fiabilidad, volúmenes, condiciones) con voz de marca alineada.',
-    },
-    {
-      title: 'Publicidad segmentada en alta competencia',
-      body: 'Campañas separadas por segmento: targeting fino, test de creatividades y limpieza continua de combinaciones débiles.',
-    },
-    {
-      title: 'Trabajo conjunto con el cliente',
-      body: 'Aprobaciones con producción y ventas: respuesta rápida a estacionalidad, promos y demanda del mercado sin romper la comunicación.',
-    },
-    {
-      title: 'Analítica y escalado',
-      body: 'Revisión mensual de resultados, optimización de presupuesto y escalado solo de lo que confirman los datos.',
-    },
-  ],
-  ctaKicker: 'Siguiente',
-  ctaTitle: '¿Hablamos de un caso parecido para tu nicho?',
-  ctaBody: 'Déjame un contacto en el pie o en redes: vuelvo con primeras hipótesis y formatos de colaboración.',
-  ctaButton: 'Volver al landing',
+  pageTitle: 'Proyectos',
+  pageLead: 'Cinco proyectos con resultados medibles: contexto, acciones y métricas clave en cada bloque.',
+  context: 'Contexto',
+  whatIDid: 'Qué hice',
+  result: 'Resultado',
+  ctaKicker: 'Siguiente paso',
+  ctaTitle: '¿Hablamos de un proyecto parecido para tu negocio?',
+  ctaBody: 'Contáctanos',
+  ctaButton: 'Ir a contactos',
 }
 
-const casesPaversEn = {
+const projectsPageEn = {
+  docTitle: 'Projects · María SMM',
   backHome: 'Back to home',
-  imageAlt: 'Case study: paving manufacturer',
-  heroBadge: 'Case #1 · Manufacturing',
-  title: 'Paving manufacturer for courtyards',
-  subtitle: 'B2B + B2C strategy · 2+ years working together · Targeted ads + SMM',
-  metricLabels: ['Monthly profit', 'ROAS on ads', 'Ad budget', 'Time to stable results'],
-  metricValues: ['€30,000', '×20', '€1,500', '6 mo.'],
-  taskTitle: 'Challenge',
-  taskBody:
-    'Client — paving manufacturer for courtyards — in a highly competitive niche with weak social presence. We needed systematic SMM covering both private homeowners (B2C) and construction firms and designers (B2B).',
-  doneTitle: 'What we delivered',
-  donePill: 'Systems-first focus',
-  deliverables: [
-    {
-      title: 'Dual content strategy',
-      body: 'Separate messaging for B2C (courtyard beauty, inspiration, before/after) and B2B (reliability, volumes, partnership terms) with a synced brand voice.',
-    },
-    {
-      title: 'Targeted ads under high competition',
-      body: 'Separate campaigns per segment: precise targeting, creative testing, and continuous pruning of weak combinations.',
-    },
-    {
-      title: 'Teamwork on the client side',
-      body: 'Joint approvals with production and sales — fast reactions to seasonality, promos, and market demand without breaking the thread.',
-    },
-    {
-      title: 'Analytics and scaling',
-      body: 'Monthly performance reviews, budget optimisation, and scaling only combinations validated by data.',
-    },
-  ],
-  ctaKicker: 'Next',
-  ctaTitle: 'Ready to discuss a similar case for your niche?',
-  ctaBody: 'Leave a contact in the footer or reach out on social — I’ll come back with first hypotheses and collaboration formats.',
-  ctaButton: 'Return to landing',
+  pageTitle: 'Projects',
+  pageLead: 'Five projects with measurable outcomes — context, what we did, and headline metrics in each block.',
+  context: 'Context',
+  whatIDid: 'What I did',
+  result: 'Outcome',
+  ctaKicker: 'Next step',
+  ctaTitle: 'Want to discuss a similar project for your business?',
+  ctaBody: 'Contact us',
+  ctaButton: 'Go to contacts',
 }
 
 function baseLocale(
@@ -636,12 +394,12 @@ function baseLocale(
   stats,
   projectSpotlight,
   about,
-  casesPreview,
+  projectsPreview,
   process,
   testimonials,
   blog,
   reviews,
-  casesPage,
+  projectsPage,
   footer,
 ) {
   return {
@@ -652,36 +410,36 @@ function baseLocale(
     stats,
     projectSpotlight,
     about,
-    casesPreview,
+    projectsPreview,
     process,
     testimonials,
     blog,
     reviews,
-    casesPage,
+    projectsPage,
     footer,
   }
 }
 
-const navUa = { about: 'Про мене', how: 'Як працюю', cases: 'Кейси', reviews: 'Відгуки', blog: 'Блог', contacts: 'Контакти' }
-const navEs = { about: 'Sobre mí', how: 'Cómo trabajo', cases: 'Casos', reviews: 'Reseñas', blog: 'Blog', contacts: 'Contacto' }
-const navEn = { about: 'About', how: 'How I work', cases: 'Cases', reviews: 'Reviews', blog: 'Blog', contacts: 'Contact' }
+const navUa = { about: 'Про мене', how: 'Як працюю', projects: 'Проєкти', reviews: 'Відгуки', blog: 'Блог', contacts: 'Контакти' }
+const navEs = { about: 'Sobre mí', how: 'Cómo trabajo', projects: 'Proyectos', reviews: 'Reseñas', blog: 'Blog', contacts: 'Contacto' }
+const navEn = { about: 'About', how: 'How I work', projects: 'Projects', reviews: 'Reviews', blog: 'Blog', contacts: 'Contact' }
 
 const headerUa = {
-  casesCta: 'Детальніше про кейси',
+  projectsCta: 'Детальніше про проєкти',
   navTitle: 'Навігація',
   menu: 'Меню',
   closeMenu: 'Закрити меню',
   langGroup: 'Мова сайту',
 }
 const headerEs = {
-  casesCta: 'Más sobre los casos',
+  projectsCta: 'Más sobre los proyectos',
   navTitle: 'Navegación',
   menu: 'Menú',
   closeMenu: 'Cerrar menú',
   langGroup: 'Idioma del sitio',
 }
 const headerEn = {
-  casesCta: 'More on cases',
+  projectsCta: 'More on projects',
   navTitle: 'Navigation',
   menu: 'Menu',
   closeMenu: 'Close menu',
@@ -794,10 +552,11 @@ const statsEn = {
 
 const projectUa = {
   imageAlt: "Кейс: виробник бруківки для подвір'я",
+  sectionHeading: 'Системний SMM на прикладі реального бізнесу',
   kicker: 'Обраний проєкт',
   title: 'Виробник бруківки для подвірʼя',
   subtitle: 'B2B + B2C стратегія · 2+ роки співпраці · Таргетована реклама + SMM',
-  pills: ['30 000€ прибуток щомісяця', '×20 ROAS на рекламу', '1 500€ бюджет на рекламу', '6 міс. до стабільного результату'],
+  pills: ['30 000€ прибуток щомісяця', '×20 ROAS на рекламу', '1 500€ бюджет на рекламу'],
   taskTitle: 'Задача',
   taskBody:
     'Клієнт — виробник бруківки для подвірʼя — у висококонкурентній ніші без сильної присутності в соцмережах. Потрібно було вибудувати системний SMM для двох сегментів: приватних замовників (B2C) та будівельних компаній і дизайнерів (B2B).',
@@ -805,10 +564,11 @@ const projectUa = {
 
 const projectEs = {
   imageAlt: 'Caso: fabricante de adoquines',
+  sectionHeading: 'SMM sistemático con un negocio real',
   kicker: 'Proyecto destacado',
   title: 'Fabricante de adoquines para patios',
   subtitle: 'Estrategia B2B + B2C · 2+ años · Ads + SMM',
-  pills: ['30 000€ beneficio mensual', '×20 ROAS en ads', '1 500€ presupuesto ads', '6 meses a resultado estable'],
+  pills: ['30 000€ beneficio mensual', '×20 ROAS en ads', '1 500€ presupuesto ads'],
   taskTitle: 'Reto',
   taskBody:
     'Cliente fabricante de adoquines, nicho competitivo y poca presencia social. Había que montar un SMM sistemático para B2C (particulares) y B2B (constructoras y diseñadores).',
@@ -816,10 +576,11 @@ const projectEs = {
 
 const projectEn = {
   imageAlt: 'Case: paving manufacturer',
+  sectionHeading: 'Systematic SMM with a real business',
   kicker: 'Featured project',
   title: 'Paving manufacturer for courtyards',
   subtitle: 'B2B + B2C strategy · 2+ years · Targeted ads + SMM',
-  pills: ['€30k monthly profit', '×20 ROAS on ads', '€1.5k ad budget', '6 mo. to stable results'],
+  pills: ['€30k monthly profit', '×20 ROAS on ads', '€1.5k ad budget'],
   taskTitle: 'Challenge',
   taskBody:
     'Client — paving manufacturer — competitive niche, weak social presence. We needed systematic SMM for homeowners (B2C) and construction firms and designers (B2B).',
@@ -861,7 +622,7 @@ aboutUa.paragraphs = [
   'Беру проєкт «під ключ»: від стратегії та брендингу до продакшену контенту, дизайну, запуску реклами й щомісячної аналітики. Використовую AI-інструменти, щоб створювати впізнаваний візуал, який виділяє бренд серед конкурентів.',
 ]
 
-const casesPreviewUa = {
+const projectsPreviewUa = {
   kicker: 'Портфоліо',
   title: 'Мої роботи',
   case1Title: 'Виробник бруківки для подвірʼя',
@@ -872,8 +633,8 @@ const casesPreviewUa = {
   case3Meta: 'Україна · Медицина',
 }
 
-const casesPreviewEs = {
-  kicker: 'Portafolio',
+const projectsPreviewEs = {
+  kicker: 'Portfolio',
   title: 'Mis trabajos',
   case1Title: 'Fabricante de adoquines para patios',
   case1Meta: 'Ucrania · 2+ años',
@@ -883,7 +644,7 @@ const casesPreviewEs = {
   case3Meta: 'Ucrania · Salud',
 }
 
-const casesPreviewEn = {
+const projectsPreviewEn = {
   kicker: 'Portfolio',
   title: 'Selected work',
   case1Title: 'Paving manufacturer for courtyards',
@@ -980,6 +741,10 @@ const footerUa = {
   phone: 'Телефон',
   email: 'Email',
   rights: 'Усі права захищені.',
+  devIntro: 'Сайт створив Serhii Kundys.',
+  devEmail: 'Пошта',
+  devWhatsApp: 'WhatsApp',
+  devLinkedIn: 'LinkedIn',
 }
 
 const footerEs = {
@@ -990,6 +755,10 @@ const footerEs = {
   phone: 'Teléfono',
   email: 'Email',
   rights: 'Todos los derechos reservados.',
+  devIntro: 'Sitio web creado por Serhii Kundys.',
+  devEmail: 'Email',
+  devWhatsApp: 'WhatsApp',
+  devLinkedIn: 'LinkedIn',
 }
 
 const footerEn = {
@@ -1000,6 +769,10 @@ const footerEn = {
   phone: 'Phone',
   email: 'Email',
   rights: 'All rights reserved.',
+  devIntro: 'Website built by Serhii Kundys.',
+  devEmail: 'Email',
+  devWhatsApp: 'WhatsApp',
+  devLinkedIn: 'LinkedIn',
 }
 
 const ua = baseLocale(
@@ -1010,12 +783,12 @@ const ua = baseLocale(
   statsUa,
   projectUa,
   aboutUa,
-  casesPreviewUa,
+  projectsPreviewUa,
   sharedProcessUa,
   testimonialsUa,
   uaBlog,
   { items: reviewsUa, ...reviewsPageUa },
-  { pavers: casesPaversUa },
+  projectsPageUa,
   footerUa,
 )
 
@@ -1027,12 +800,12 @@ const es = baseLocale(
   statsEs,
   projectEs,
   aboutEs,
-  casesPreviewEs,
+  projectsPreviewEs,
   sharedProcessEs,
   testimonialsEs,
   esBlog,
   { items: reviewsEs, ...reviewsPageEs },
-  { pavers: casesPaversEs },
+  projectsPageEs,
   footerEs,
 )
 
@@ -1044,12 +817,12 @@ const en = baseLocale(
   statsEn,
   projectEn,
   aboutEn,
-  casesPreviewEn,
+  projectsPreviewEn,
   sharedProcessEn,
   testimonialsEn,
   enBlog,
   { items: reviewsEn, ...reviewsPageEn },
-  { pavers: casesPaversEn },
+  projectsPageEn,
   footerEn,
 )
 

@@ -1,0 +1,1 @@
+function e(e){return Array.isArray(e)?e.map(e=>{if(typeof e==`string`)return{kind:`p`,text:e};if(e&&typeof e==`object`&&`kind`in e&&`text`in e){let t=e.kind;if(t===`h2`||t===`h3`||t===`quote`||t===`p`)return{kind:t,text:String(e.text)}}return{kind:`p`,text:String(e)}}):[]}export{e as t};

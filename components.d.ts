@@ -21,6 +21,7 @@ declare module 'vue' {
     ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
     HeroSection: typeof import('./src/components/sections/HeroSection.vue')['default']
     ProcessSection: typeof import('./src/components/sections/ProcessSection.vue')['default']
+    ProjectCarousel: typeof import('./src/components/projects/ProjectCarousel.vue')['default']
     ProjectSpotlight: typeof import('./src/components/sections/ProjectSpotlight.vue')['default']
     ReviewCard: typeof import('./src/components/reviews/ReviewCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

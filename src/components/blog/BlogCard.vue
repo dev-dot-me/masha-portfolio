@@ -38,6 +38,13 @@ const tagClass = computed(() => {
         {{ post.title }}
       </h3>
 
+      <p
+        v-if="post.excerpt"
+        class="line-clamp-3 text-sm leading-relaxed text-brand/70 md:text-[0.95rem]"
+      >
+        {{ post.excerpt }}
+      </p>
+
       <RouterLink
         :to="{ name: 'blog-post', params: { slug: post.slug } }"
         class="inline-flex w-fit items-center gap-2 rounded-full border border-black/[0.12] bg-white px-4 py-2 text-sm font-semibold text-brand transition hover:border-brand hover:bg-brand hover:text-white"
@@ -50,11 +57,13 @@ const tagClass = computed(() => {
         <span>{{ post.dateLabel }}</span>
         <span class="text-brand/25" aria-hidden="true">|</span>
         <span>{{ post.readTime }}</span>
+        <!-- Article views (hidden)
         <span class="text-brand/25" aria-hidden="true">|</span>
         <span class="inline-flex items-center gap-1" :title="t('blog.viewsHint')">
           <span aria-hidden="true">👁</span>
           <span>{{ post.viewsFormatted }}</span>
         </span>
+        -->
       </p>
     </div>
   </article>

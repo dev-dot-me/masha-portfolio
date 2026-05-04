@@ -1,6 +1,7 @@
-import cover1 from '../assets/large-project.png'
-import cover2 from '../assets/case1.png'
-import cover3 from '../assets/case2.png'
+import cover1 from '../assets/article1.png'
+import cover2 from '../assets/article2.png'
+import cover3 from '../assets/article3.png'
+import coverRepeat from '../assets/mi-trabajo1.png'
 import cover4 from '../assets/author-photo.png'
 import cover5 from '../assets/author-photo1.png'
 
@@ -21,30 +22,30 @@ import cover5 from '../assets/author-photo1.png'
 /** @type {BlogPostMeta[]} */
 export const blogPostsMeta = [
   {
-    slug: '10-idey-kontent-dnya-materi',
+    slug: 'que-es-smm-marketing-redes',
     tagTone: 'smm',
     tagKey: 'smm',
     publishedAt: '2026-05-01',
-    readMinutes: 3,
-    views: 44,
+    readMinutes: 14,
+    views: 2410,
     cover: cover1,
   },
   {
-    slug: 'doslidzhennya-instagram-45-brendiv',
-    tagTone: 'research',
-    tagKey: 'research',
-    publishedAt: '2026-04-28',
-    readMinutes: 2,
-    views: 213,
+    slug: 'ia-smm-herramientas-tiempo',
+    tagTone: 'ai',
+    tagKey: 'ai',
+    publishedAt: '2026-04-29',
+    readMinutes: 11,
+    views: 890,
     cover: cover2,
   },
   {
-    slug: 'kontent-plan-smm-traven-2026',
+    slug: 'instagram-analitica-leer-datos',
     tagTone: 'smm',
     tagKey: 'smm',
     publishedAt: '2026-04-26',
-    readMinutes: 5,
-    views: 10034,
+    readMinutes: 12,
+    views: 1820,
     cover: cover3,
   },
   {
@@ -54,7 +55,7 @@ export const blogPostsMeta = [
     publishedAt: '2026-04-22',
     readMinutes: 4,
     views: 156,
-    cover: cover2,
+    cover: coverRepeat,
   },
   {
     slug: '50-promptiv-chatgpt-smm',

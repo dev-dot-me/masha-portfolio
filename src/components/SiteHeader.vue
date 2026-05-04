@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { persistLocale } from '../i18n/index.js'
-import flagEs from '../assets/flags/es.svg'
+import flagEs from '../assets/flags/es.png'
 import flagGb from '../assets/flags/gb.svg'
 import flagUa from '../assets/flags/ua.svg'
 
@@ -25,7 +25,7 @@ const currentLocaleOption = computed(
 const links = computed(() => [
   { label: t('nav.about'), hash: '#about' },
   { label: t('nav.how'), hash: '#how' },
-  { label: t('nav.cases'), hash: '#cases' },
+  { label: t('nav.projects'), hash: '#projects' },
   { label: t('nav.reviews'), hash: '#reviews' },
   { label: t('nav.blog'), hash: '#blog' },
   { label: t('nav.contacts'), hash: '#contacts' },
@@ -44,7 +44,7 @@ function setLocale(code) {
   >
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:gap-4 md:py-4 lg:px-8">
       <RouterLink to="/" class="group flex min-w-0 shrink items-center gap-2" @click="drawer = false">
-        <span class="font-heading text-xl tracking-tight text-brand md:text-2xl">María</span>
+        <span class="font-heading text-xl tracking-tight text-brand md:text-2xl">Mariia Kushnir</span>
         <span
           class="hidden rounded-full bg-surface px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-brand/80 sm:inline"
           >SMM</span
@@ -107,13 +107,6 @@ function setLocale(code) {
           </template>
         </el-dropdown>
 
-        <RouterLink
-          to="/cases"
-          class="hidden rounded-full bg-brand px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-brand/90 sm:inline-flex sm:px-4 sm:text-sm lg:inline-flex"
-        >
-          {{ t('header.casesCta') }}
-        </RouterLink>
-
         <div class="flex items-center xl:hidden">
           <button
             type="button"
@@ -163,13 +156,6 @@ function setLocale(code) {
             @click="drawer = false"
           >
             {{ item.label }}
-          </RouterLink>
-          <RouterLink
-            to="/cases"
-            class="rounded-xl px-3 py-3 text-base font-semibold leading-snug text-brand hover:bg-surface"
-            @click="drawer = false"
-          >
-            {{ t('header.casesCta') }}
           </RouterLink>
         </nav>
       </div>

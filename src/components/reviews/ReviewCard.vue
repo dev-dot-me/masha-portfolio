@@ -19,7 +19,6 @@ defineProps({
       </div>
       <div>
         <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand">{{ item.name }}</p>
-        <p class="mt-1 text-sm font-semibold text-brand/55 underline decoration-brand/25">{{ item.handle }}</p>
       </div>
     </div>
     <p class="mt-5 flex-1 text-sm leading-relaxed text-brand/75 md:text-[0.9375rem] md:leading-relaxed">

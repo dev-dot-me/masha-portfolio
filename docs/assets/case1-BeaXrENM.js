@@ -1,1 +1,0 @@
-var e=``+new URL(`case1-C_NcrxSc.png`,import.meta.url).href;export{e as t};

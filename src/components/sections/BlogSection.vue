@@ -1,10 +1,12 @@
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import BlogCard from '../blog/BlogCard.vue'
 import { useLocalizedBlogPosts } from '../../composables/useLocalizedBlogPosts.js'
 
 const { t } = useI18n()
-const items = useLocalizedBlogPosts()
+const allPosts = useLocalizedBlogPosts()
+const items = computed(() => allPosts.value.slice(0, 3))
 </script>
 
 <template>
