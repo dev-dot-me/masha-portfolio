@@ -69,15 +69,19 @@
     ],
     "cta": "Saber más"
   },
+  "aboutPage": {
+    "back": "Volver al inicio",
+    "title": "María · SMM Lead"
+  },
   "projectsPreview": {
     "kicker": "Portfolio",
     "title": "Mis trabajos",
-    "case1Title": "Fabricante de adoquines para patios",
-    "case1Meta": "Ucrania · 2+ años",
-    "case2Title": "Viajes a África",
-    "case2Meta": "EAU · Turismo",
-    "case3Title": "Clínica dental",
-    "case3Meta": "Ucrania · Salud"
+    "case1Title": "Fabricante de productos de hormigón",
+    "case1Meta": "Ucrania · Sector industrial",
+    "case2Title": "Inmobiliario y diseño de interiores",
+    "case2Meta": "Ucrania · Sector inmobiliario",
+    "case3Title": "Ferretería y jardinería",
+    "case3Meta": "Ucrania · Sector e-commerce"
   },
   "process": {
     "sectionKicker": "Proceso transparente",

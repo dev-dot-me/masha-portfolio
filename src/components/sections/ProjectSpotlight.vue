@@ -14,9 +14,9 @@ const pills = computed(() => {
 <template>
   <section class="scroll-mt-24 px-4 py-14 lg:px-8 lg:py-20">
     <div class="mx-auto max-w-6xl space-y-8 lg:space-y-10">
-      <header class="project-spotlight-heading-scroll min-w-0 overflow-x-auto text-left [-webkit-overflow-scrolling:touch]">
+      <header class="min-w-0 text-left">
         <h2
-          class="inline-block whitespace-nowrap font-heading text-3xl font-semibold leading-[1.08] tracking-tight text-brand md:text-4xl lg:text-[2.65rem]"
+          class="break-words font-heading text-2xl font-semibold leading-[1.12] tracking-tight text-brand sm:text-3xl md:text-4xl lg:text-[2.65rem]"
         >
           {{ t('projectSpotlight.sectionHeading') }}
         </h2>
@@ -39,7 +39,7 @@ const pills = computed(() => {
         <div class="min-w-0 space-y-6 text-left">
           <div class="space-y-3">
             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand/45">{{ t('projectSpotlight.kicker') }}</p>
-            <h3 class="font-heading text-3xl leading-tight text-brand md:text-4xl">
+            <h3 class="break-words font-heading text-2xl leading-tight text-brand sm:text-3xl md:text-4xl">
               {{ t('projectSpotlight.title') }}
             </h3>
             <p class="text-sm font-medium leading-relaxed text-brand/70 md:text-base">
@@ -70,15 +70,3 @@ const pills = computed(() => {
   </section>
 </template>
 
-<style scoped>
-/* Приховуємо скролбар (стрілки/смуга), щоб заголовок лишався в один ряд без зайвого UI */
-.project-spotlight-heading-scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.project-spotlight-heading-scroll::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-}
-</style>

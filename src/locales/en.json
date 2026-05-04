@@ -69,15 +69,19 @@
     ],
     "cta": "Learn more"
   },
+  "aboutPage": {
+    "back": "Back to home",
+    "title": "María · SMM Lead"
+  },
   "projectsPreview": {
     "kicker": "Portfolio",
     "title": "Selected work",
-    "case1Title": "Paving manufacturer for courtyards",
-    "case1Meta": "Ukraine · 2+ years",
-    "case2Title": "Africa tours",
-    "case2Meta": "UAE · Travel",
-    "case3Title": "Dental clinic",
-    "case3Meta": "Ukraine · Healthcare"
+    "case1Title": "Concrete products manufacturer",
+    "case1Meta": "Ukraine · Industrial sector",
+    "case2Title": "Real estate and interior design",
+    "case2Meta": "Ukraine · Real estate sector",
+    "case3Title": "Hardware and garden retail",
+    "case3Meta": "Ukraine · E-commerce sector"
   },
   "process": {
     "sectionKicker": "Transparent process",

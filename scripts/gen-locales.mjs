@@ -394,6 +394,7 @@ function baseLocale(
   stats,
   projectSpotlight,
   about,
+  aboutPage,
   projectsPreview,
   process,
   testimonials,
@@ -410,6 +411,7 @@ function baseLocale(
     stats,
     projectSpotlight,
     about,
+    aboutPage,
     projectsPreview,
     process,
     testimonials,
@@ -622,37 +624,52 @@ aboutUa.paragraphs = [
   'Беру проєкт «під ключ»: від стратегії та брендингу до продакшену контенту, дизайну, запуску реклами й щомісячної аналітики. Використовую AI-інструменти, щоб створювати впізнаваний візуал, який виділяє бренд серед конкурентів.',
 ]
 
+const aboutPageUa = {
+  back: 'На головну',
+  title: aboutUa.title,
+}
+
+const aboutPageEs = {
+  back: 'Volver al inicio',
+  title: aboutEs.title,
+}
+
+const aboutPageEn = {
+  back: 'Back to home',
+  title: aboutEn.title,
+}
+
 const projectsPreviewUa = {
   kicker: 'Портфоліо',
   title: 'Мої роботи',
-  case1Title: 'Виробник бруківки для подвірʼя',
-  case1Meta: 'Україна · 2+ роки співпраці',
-  case2Title: 'Тури в Африку',
-  case2Meta: 'ОАЕ · Туризм',
-  case3Title: 'Стоматологія',
-  case3Meta: 'Україна · Медицина',
+  case1Title: 'Виробник бетонних виробів',
+  case1Meta: 'Україна · Промисловий сектор',
+  case2Title: "Нерухомість та дизайн інтер'єру",
+  case2Meta: 'Україна · Сектор нерухомості',
+  case3Title: 'Господарчі товари та сад',
+  case3Meta: 'Україна · Сектор e-commerce',
 }
 
 const projectsPreviewEs = {
   kicker: 'Portfolio',
   title: 'Mis trabajos',
-  case1Title: 'Fabricante de adoquines para patios',
-  case1Meta: 'Ucrania · 2+ años',
-  case2Title: 'Viajes a África',
-  case2Meta: 'EAU · Turismo',
-  case3Title: 'Clínica dental',
-  case3Meta: 'Ucrania · Salud',
+  case1Title: 'Fabricante de productos de hormigón',
+  case1Meta: 'Ucrania · Sector industrial',
+  case2Title: 'Inmobiliario y diseño de interiores',
+  case2Meta: 'Ucrania · Sector inmobiliario',
+  case3Title: 'Ferretería y jardinería',
+  case3Meta: 'Ucrania · Sector e-commerce',
 }
 
 const projectsPreviewEn = {
   kicker: 'Portfolio',
   title: 'Selected work',
-  case1Title: 'Paving manufacturer for courtyards',
-  case1Meta: 'Ukraine · 2+ years',
-  case2Title: 'Africa tours',
-  case2Meta: 'UAE · Travel',
-  case3Title: 'Dental clinic',
-  case3Meta: 'Ukraine · Healthcare',
+  case1Title: 'Concrete products manufacturer',
+  case1Meta: 'Ukraine · Industrial sector',
+  case2Title: 'Real estate and interior design',
+  case2Meta: 'Ukraine · Real estate sector',
+  case3Title: 'Hardware and garden retail',
+  case3Meta: 'Ukraine · E-commerce sector',
 }
 
 const testimonialsUa = {
@@ -783,6 +800,7 @@ const ua = baseLocale(
   statsUa,
   projectUa,
   aboutUa,
+  aboutPageUa,
   projectsPreviewUa,
   sharedProcessUa,
   testimonialsUa,
@@ -800,6 +818,7 @@ const es = baseLocale(
   statsEs,
   projectEs,
   aboutEs,
+  aboutPageEs,
   projectsPreviewEs,
   sharedProcessEs,
   testimonialsEs,
@@ -817,6 +836,7 @@ const en = baseLocale(
   statsEn,
   projectEn,
   aboutEn,
+  aboutPageEn,
   projectsPreviewEn,
   sharedProcessEn,
   testimonialsEn,

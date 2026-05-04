@@ -23,13 +23,23 @@ const currentLocaleOption = computed(
 )
 
 const links = computed(() => [
-  { label: t('nav.about'), hash: '#about' },
-  { label: t('nav.how'), hash: '#how' },
-  { label: t('nav.projects'), hash: '#projects' },
-  { label: t('nav.reviews'), hash: '#reviews' },
-  { label: t('nav.blog'), hash: '#blog' },
-  { label: t('nav.contacts'), hash: '#contacts' },
+  { id: 'about', label: t('nav.about'), to: { path: '/', hash: '#about' } },
+  { id: 'how', label: t('nav.how'), to: { path: '/', hash: '#how' } },
+  { id: 'projects', label: t('nav.projects'), to: '/projects' },
+  { id: 'reviews', label: t('nav.reviews'), to: '/reviews' },
+  { id: 'blog', label: t('nav.blog'), to: { path: '/', hash: '#blog' } },
+  { id: 'contacts', label: t('nav.contacts'), to: { path: '/', hash: '#contacts' } },
 ])
+
+function isNavLinkActive(to) {
+  if (typeof to === 'string') {
+    return route.path === to
+  }
+  const path = to.path ?? '/'
+  if (route.path !== path) return false
+  const hash = to.hash ?? ''
+  return (route.hash || '') === hash
+}
 
 function setLocale(code) {
   if (code !== 'es' && code !== 'en' && code !== 'ua') return
@@ -54,10 +64,10 @@ function setLocale(code) {
       <nav class="hidden min-w-0 flex-1 items-center justify-center gap-0.5 xl:flex xl:gap-1">
         <RouterLink
           v-for="item in links"
-          :key="item.hash"
-          :to="{ path: '/', hash: item.hash }"
+          :key="item.id"
+          :to="item.to"
           class="rounded-full px-2.5 py-2 text-sm font-medium text-brand/70 transition hover:bg-surface hover:text-brand xl:px-3"
-          :class="{ 'bg-surface text-brand': route.path === '/' && route.hash === item.hash }"
+          :class="{ 'bg-surface text-brand': isNavLinkActive(item.to) }"
         >
           {{ item.label }}
         </RouterLink>
@@ -150,9 +160,10 @@ function setLocale(code) {
         <nav class="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto">
           <RouterLink
             v-for="item in links"
-            :key="item.hash"
-            :to="{ path: '/', hash: item.hash }"
+            :key="item.id"
+            :to="item.to"
             class="rounded-xl px-3 py-3 text-base font-medium leading-snug text-brand hover:bg-surface"
+            :class="{ 'bg-surface text-brand': isNavLinkActive(item.to) }"
             @click="drawer = false"
           >
             {{ item.label }}

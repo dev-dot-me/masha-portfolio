@@ -101,41 +101,36 @@ watchEffect(() => {
               </div>
             </div>
 
-            <header class="relative space-y-4 text-center lg:text-left">
+            <header class="relative space-y-4 text-center text-pretty lg:text-left lg:space-y-5">
+              <h1
+                class="font-heading text-3xl font-bold leading-[1.12] text-brand sm:text-4xl md:text-[2.35rem] lg:text-[2.5rem]"
+              >
+                {{ t('aboutPage.title') }}
+              </h1>
               <p
                 class="text-[11px] font-bold uppercase leading-snug tracking-[0.2em] text-brand/50 sm:text-xs sm:tracking-[0.18em]"
               >
                 {{ page.heroKicker }}
               </p>
               <div class="mx-auto h-1 w-12 rounded-full bg-gradient-to-r from-brand/35 to-brand lg:mx-0" />
-              <h1
-                class="font-heading text-3xl font-bold leading-[1.12] text-brand text-pretty sm:text-4xl md:text-[2.35rem] lg:text-[2.5rem]"
-              >
-                {{ t('aboutPage.title') }}
-              </h1>
+              <template v-if="segments.lead.length">
+                <p
+                  v-if="segments.lead[0]"
+                  class="font-heading text-2xl font-semibold leading-snug text-brand sm:text-3xl md:text-[1.75rem]"
+                >
+                  {{ segments.lead[0] }}
+                </p>
+                <p
+                  v-for="(line, li) in segments.lead.slice(1)"
+                  :key="li"
+                  class="text-base leading-relaxed text-brand/75 md:text-lg"
+                >
+                  {{ line }}
+                </p>
+              </template>
             </header>
           </div>
         </div>
-
-        <!-- Lead: акцентний вступ -->
-        <section
-          v-if="segments.lead.length"
-          class="mx-auto mt-10 max-w-4xl space-y-6 text-pretty sm:mt-12 md:mt-14"
-        >
-          <p
-            v-if="segments.lead[0]"
-            class="font-heading text-2xl font-semibold leading-snug text-brand sm:text-3xl md:text-[1.75rem]"
-          >
-            {{ segments.lead[0] }}
-          </p>
-          <p
-            v-for="(line, li) in segments.lead.slice(1)"
-            :key="li"
-            class="text-base leading-relaxed text-brand/75 md:text-lg"
-          >
-            {{ line }}
-          </p>
-        </section>
       </article>
     </div>
 
