@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 /** Перший сегмент URL для цих маршрутів — не назва репо (корінь сайту), а сам маршрут. */
-const ROOT_TOP_SEGMENTS = new Set(['reviews', 'projects', 'cases', 'blog', 'about'])
+const ROOT_TOP_SEGMENTS = new Set(['reviews', 'projects', 'cases', 'blog', 'about', 'how', 'how-i-work'])
 
 /**
  * GitHub Pages: сайт у підпапці /REPO/ → history base /REPO/.
- * Локально / vite preview на корені: /reviews, /projects — base має бути '/', інакше router-view порожній.
+ * Локально / vite preview на корені: /reviews, /projects, /how-i-work — base має бути '/', інакше router-view порожній.
  */
 function resolveHistoryBase() {
   const base = import.meta.env.BASE_URL
@@ -45,6 +45,15 @@ const router = createRouter({
     {
       path: '/cases',
       redirect: '/projects',
+    },
+    {
+      path: '/how',
+      redirect: '/how-i-work',
+    },
+    {
+      path: '/how-i-work',
+      name: 'how',
+      component: () => import('../views/HowWorkView.vue'),
     },
     {
       path: '/projects',

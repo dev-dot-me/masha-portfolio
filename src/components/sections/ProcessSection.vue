@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+// import icebergDiagram from '../../assets/iceberg-smm.png'
 
 const { t, tm } = useI18n()
 
@@ -20,6 +21,18 @@ const steps = computed(() => {
           {{ t('process.intro') }}
         </p>
       </div>
+
+      <!-- <figure class="mx-auto max-w-4xl">
+        <img
+          :src="icebergDiagram"
+          :alt="t('process.icebergAlt')"
+          class="w-full rounded-2xl border border-black/[0.06] bg-white object-contain shadow-sm ring-1 ring-black/[0.04]"
+          width="1600"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure> -->
 
       <div class="grid gap-6 md:grid-cols-2">
         <article

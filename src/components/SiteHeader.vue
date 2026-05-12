@@ -24,7 +24,7 @@ const currentLocaleOption = computed(
 
 const links = computed(() => [
   { id: 'about', label: t('nav.about'), to: { path: '/', hash: '#about' } },
-  { id: 'how', label: t('nav.how'), to: { path: '/', hash: '#how' } },
+  { id: 'how', label: t('nav.how'), to: '/how-i-work' },
   { id: 'projects', label: t('nav.projects'), to: '/projects' },
   { id: 'reviews', label: t('nav.reviews'), to: '/reviews' },
   { id: 'blog', label: t('nav.blog'), to: { path: '/', hash: '#blog' } },
